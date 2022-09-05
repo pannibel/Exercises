@@ -33,13 +33,14 @@ hexToRGB("#f29c12");
 
 
 // RGB TO HEX
-function colorToHex(color) {
-    let hexadecimal = color.toString(16);
-    return hexadecimal.length == 1 ? "0" + hexadecimal : hexadecimal;
+function rgbToHex(color) {
+
+    r = color.r.toString(16);
+    g = color.g.toString(16);
+    b = color.b.toString(16);
+
+    console.log("#"+r+g+b);
 }
 
-function rgbToHex() {
-    console.log("#" + colorToHex(r) + colorToHex(g) + colorToHex(b))
-}
+rgbToHex({r: 255, b: 100, g: 200})
 
-rgbToHex(255, 100, 200); 
