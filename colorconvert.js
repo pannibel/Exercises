@@ -35,12 +35,12 @@ hexToRGB("#f29c12");
 // RGB TO HEX
 function rgbToHex(color) {
 
-    r = color.r.toString(16);
-    g = color.g.toString(16);
-    b = color.b.toString(16);
+    r = color.r.toString(16).padStart(2, "0");
+    g = color.g.toString(16).padStart(2, "0");
+    b = color.b.toString(16).padStart(2, "0");
 
     console.log("#"+r+g+b);
 }
 
-rgbToHex({r: 255, b: 100, g: 200})
+rgbToHex({r: 34, b: 10, g: 20})
 
