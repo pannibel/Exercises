@@ -15,4 +15,4 @@ function colorConvert(cssString) {
     console.log(r, g, b)
 }
 
-colorConvert("rgb(192, 13, 1)");
+colorConvert("rgb(45, 32, 1)");
