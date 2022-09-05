@@ -24,7 +24,7 @@ function hexToRGB(color) {
 
     r = parseInt(color.substr(1, 2), 16);
     g = parseInt(color.substr(3, 2), 16);
-    b = parseInt(color.substrs(5, 2), 16);
+    b = parseInt(color.substr(5, 2), 16);
 
     console.log(r, g, b)
 }
