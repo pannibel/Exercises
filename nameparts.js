@@ -22,7 +22,7 @@ fullName("Potter", "Harry", "James", "POttypot") */
 
 //
 
-const person = "Lucas Panni Rei"
+/* const person = "Lucas Panni Rei"
 let lastName = person.substring(person.lastIndexOf(" ")+1);
 let firstName = person.substring(person[0], person.indexOf(" "));
 let middleName = person.substring(person.indexOf(" ") +1, person.lastIndexOf(" "));
@@ -37,7 +37,35 @@ function fullname(lastName, firstName, middleName) {
     }
 }
 
-console.log(full)
+console.log(full) */
 
 //
 
+const fullName = "lucas Ranni";
+let nameArray;
+const nameParts = getNameParts(fullName);
+
+function getNameParts(fullName) {
+    let firstName = fullName.substring([0], fullName.indexOf(" "));
+    let middleName = fullName.substring(fullName.indexOf(" ")+1, fullName.lastIndexOf(" "));
+    let lastName = fullName.substring(fullName.lastIndexOf(" ")+1);
+
+    firstName = firstName[0].toUpperCase() + firstName.substring(1).toLowerCase();
+    middleName = middleName[0].toUpperCase() + middleName.substring(1).toLowerCase();
+    lastName = lastName[0].toUpperCase() + lastName.substring(1).toLowerCase();
+
+if (middleName) {
+        nameArray = `{
+        first name: ${firstName},
+        middle name: ${middleName},
+        last name: ${lastName}}`;
+} else {
+    nameArray = `{
+        first name: ${firstName},
+        last name: ${lastName}}`;
+}
+
+    return nameArray;
+}
+
+console.log(nameParts)
